@@ -18,7 +18,7 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && s
 
 -Then press "ctrl + c", you should see "active (running)" in green text.
 
--Check 167.114.55.93 for apache2 home page
+-Right click on the link and open in a new tab: http://167.114.55.93, to check for apache2 home page
 
 ## Step 2 - mySQL install
 
