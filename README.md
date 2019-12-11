@@ -64,13 +64,8 @@ phpinfo();
 ```
 cd /var/www/html && sudo wget -c http://wordpress.org/latest.tar.gz && sudo tar -xzvf latest.tar.gz
 ```
-4.2 enter the root user password
 
-5.2 sudo wget -c http://wordpress.org/latest.tar.gz
-
-5.3 sudo tar -xzvf latest.tar.gz
-
-4.3 Copy & paste the code below(setting permissions):
+4.2 Copy & paste the code below(setting permissions):
 ```
 sudo chown -R www-data:www-data /var/www/html/wordpress
 ```
@@ -83,20 +78,18 @@ sudo mysql -u root -p
 
 5.2 Enter database password from step 2.2b
 
-5.3 Copy & paste the code below, but replace the text in 'quotes' with the names you want.(i.e. 'wordpress_db' is replaced with 'myfirstwordpress_db'). The text in quotes is needed later, so make sure you have it recorded somewhere.
+5.3 Copy & paste the code below, but replace the text "wordpress_db"(i.e. 'wordpress_db' is replaced with 'myfirstwordpress_db', this is done twice, but you use the same name for both) and other text in 'quotes' with the names you want.. The text in quotes is needed later, so make sure you have it recorded somewhere.
 
 ```
 CREATE DATABASE wordpress_db; GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; FLUSH PRIVILEGES; exit;
 ```
-The database name will be used in the next command below.
-
 
 **(wordpress_db, 'wordpress_user', 'PASSWORD', should be changed to something of your choice)**
 
 ```
 mv wp-config-sample.php wp-config.php 
 ```
-(make sure you are here:  /var/www/html/wordpress, you may need to enter "cd wordpress")
+(make sure you are here: cd /var/www/html/wordpress, you may need to enter "cd wordpress")cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php
 ```
 sudo nano wp-config.php
 ```
