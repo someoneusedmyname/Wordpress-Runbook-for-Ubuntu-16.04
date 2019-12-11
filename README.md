@@ -75,7 +75,7 @@ sudo mysql -u root -p
 
 5.2 Enter database password from step 2.2b
 
-5.3 Copy & paste the code below, but replace the bold text: **wordpress_db** with something like: **myfirstwordpress_db**. This is done twice, but use the same name for both and replace the other text in '**quotes**' with the names you want.. The new bold text is needed for the next step, so make sure you have it recorded somewhere.
+5.3 Copy & paste the code below, but replace the bold text: **wordpress_db**(with something like: **myfirstwordpress_db**). This is done twice, but use the same name for both. Also, create your own username '**wordpress_user**' and your own **PASSWORD**. The new bold text is needed for the next step, so make sure you have it recorded somewhere.
 
 ```
 CREATE DATABASE wordpress_db; GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; FLUSH PRIVILEGES; exit;
