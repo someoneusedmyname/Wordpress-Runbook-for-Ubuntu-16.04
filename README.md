@@ -10,10 +10,10 @@ Procede to next step after copying & pasting the code below.
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && systemctl status apache2
 ```
-Enter the root user password, (stuff will load)
-Do you want to continue? [Y/n] enter "y", (stuff will load),
-Do you want to continue? [Y/n] enter "y", (stuff will load),
-Then press "ctrl + c", you should see "active (running)" in green text.
+-Enter the root user password, (stuff will load),
+-Do you want to continue? [Y/n] enter "y", (stuff will load),
+-Do you want to continue? [Y/n] enter "y", (stuff will load),
+-Then press "ctrl + c", you should see "active (running)" in green text.
 
 
 <<<apache2 install>>>
@@ -26,9 +26,12 @@ Then press "ctrl + c", you should see "active (running)" in green text.
 
 2.4  (ctrl + c, to stop status)
 
-<<<mySQL install>>>
+##Step 2 - mySQL install
 
-3.1 sudo apt-get install mysql-server (Do you want to continue? [Y/n] enter "y")
+```
+sudo apt-get install mysql-server 
+```
+Do you want to continue? [Y/n] enter "y"
 
 3.2 purple screen --> enter a new password, re-enter password to confirm (i used "mypassword")
 
