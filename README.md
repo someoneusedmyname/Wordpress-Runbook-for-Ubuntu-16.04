@@ -75,7 +75,7 @@ sudo mysql -u root -p
 
 5.2 Enter database password from step 2.2b
 
-5.3 Copy & paste the code below, but replace the text "wordpress_db"(i.e. 'wordpress_db' is replaced with 'myfirstwordpress_db', this is done twice, but you use the same name for both) and other text in 'quotes' with the names you want.. The text in quotes is needed later, so make sure you have it recorded somewhere.
+5.3 Copy & paste the code below, but replace the text "wordpress_db"(i.e. 'wordpress_db' is replaced with something like: 'myfirstwordpress_db'. This is done twice, but use the same name for both) and other text in 'quotes' with the names you want.. The text in quotes is needed later, so make sure you have it recorded somewhere.
 
 ```
 CREATE DATABASE wordpress_db; GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; FLUSH PRIVILEGES; exit;
@@ -89,6 +89,8 @@ cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo
 
 5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below:
 
+________________________________________________________________________
+
 // ** MySQL settings - You can get this info from your web host ** //
 
 /** The name of the database for WordPress */
@@ -101,7 +103,9 @@ define('DB_USER', '**wordpress_user**');
 
 /** MySQL database password */
 
-define('DB_PASSWORD', '**PASSWORD**');         
+define('DB_PASSWORD', '**PASSWORD**');        
+
+________________________________________________________________________
 
 5.5 Press "CTRL + O" to write file, press enter, then "CTRL + X" to exit
 
