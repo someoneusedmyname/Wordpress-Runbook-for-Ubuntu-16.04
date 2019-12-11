@@ -89,6 +89,8 @@ cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo
 
 5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below:
 
+(you will editing in the nano file editor window)
+
 ________________________________________________________________________
 
 // ** MySQL settings - You can get this info from your web host ** //
