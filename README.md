@@ -18,18 +18,11 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && s
 
 -Then press "ctrl + c", you should see "active (running)" in green text.
 
-
-<<<apache2 install>>>
-
-2.1  (Do you want to continue? [Y/n] enter "y")
-
-2.2 systemctl start apache2 (enter the root user password, in this case its mine) check 167.114.55.93 for apache2 home page
-
-2.3 systemctl enable apache2 (enter the root user password, in this case its mine) do I need this? 
-
-2.4  (ctrl + c, to stop status)
+-Check 167.114.55.93 for apache2 home page
 
 ## Step 2 - mySQL install
+
+Copy & paste the code below:
 
 ```
 sudo apt-get install mysql-server 
@@ -38,23 +31,19 @@ Do you want to continue? [Y/n] enter "y"
 
 3.2 purple screen --> enter a new password, re-enter password to confirm (i used "mypassword")
 
-////////////////////////////////
+-might need this? sudo service mysql restart??
 
-3.3 
- --> enter password from above, enter "no" for password plug-in, unless you want it, 
--->  enter "no" again if you're happy with your current password) --> enter "y" to remove anon users, 
---> enter "y" to disallow root login remotely, --> enter "y" to remove test database,
---> enter "y" to reload priviliges, --> you're done here!
+(enter the root user password, in this case its mine)
 
-////////////////////////////////
+## Step 3 - Install PHP
 
-3.4 systemctl start mysql (enter the root user password, in this case its mine) sudo service mysql restart??
+Copy & paste the code below:
 
-s (enter the root user password, in this case its mine)
-??
-<<<Install PHP>>>
+```
 
 4.1 sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-mbstring php7.0-gd php7.0-xml php7.0-xmlrpc php7.0-intl php7.0-soap php7.0-zip
+
+```
 	
  (enter root user password)?? --> (Do you want to continue? [Y/n] enter "y")
 
