@@ -1,5 +1,5 @@
 # Wordpress-Runbook-for-Ubuntu-16.04
-A complete copy &amp; paste command line install for apache2, mysql, php &amp; Wordpress on Ubuntu 16.04
+A complete copy &amp; paste command line install for apache2, mysql, php &amp; Wordpress on Ubuntu 16.04 (This should take about 10 minutes)
 
 ## Step 1 - Logging In, Getting Updated & Installing Apache2
 
@@ -46,7 +46,7 @@ sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.
 sudo nano /var/www/html/info.php 
 ```
 
-3.3 Copy and paste this text into the file editor window:
+3.3 Copy and paste this text into the GNU nano 5.2.3 file editor window:
 
 ```
 <?php
@@ -87,9 +87,8 @@ CREATE DATABASE wordpress_db; GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpre
 cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo nano wp-config.php
 ```
 
-5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below:
-
-(you will be editing in the nano file editor window)
+5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below
+in the GNU nano 5.2.3 file editor window:
 
 ________________________________________________________________________
 
