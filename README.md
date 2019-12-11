@@ -115,6 +115,12 @@ systemctl restart apache2 && systemctl restart mysql
 ```
 5.7 Enter the root user password, you'll be asked twice.
 
+_______________________________________________________________________________________________
+
+We are done working in the command line. We will finish the WordPress install in the browser.
+
+________________________________________________________________________________________________
+
 5.8 Now visit http://167.114.55.93/wordpress to finish wordpress install. You should see the WordPress installation page where you select your language and continue.
 
 
