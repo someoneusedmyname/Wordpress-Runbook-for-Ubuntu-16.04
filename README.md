@@ -5,7 +5,7 @@ A complete copy &amp; paste command line install for apache2, mysql, php &amp; W
 
 ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
 
-Procede to next step after copying & pasting the code below.
+Procede to next step after copying & pasting the code below:
 
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && systemctl status apache2
@@ -41,28 +41,32 @@ Copy & paste the code below:
 
 ```
 
-4.1 sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-mbstring php7.0-gd php7.0-xml php7.0-xmlrpc php7.0-intl php7.0-soap php7.0-zip
+sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-mbstring php7.0-gd php7.0-xml php7.0-xmlrpc php7.0-intl php7.0-soap php7.0-zip
 
 ```
 	
  (enter root user password)?? --> (Do you want to continue? [Y/n] enter "y")
 
-4.2 sudo nano /var/www/html/info.php 
+```
+sudo nano /var/www/html/info.php 
+```
 
-4.3 copy and paste this text into the file editor window:
+Copy and paste this text into the file editor window:
+
 ```
 <?php
 phpinfo();
 ?>
 ```
 
-then, "ctrl + o", press enter to write file, then "ctrl + x" to exit
+Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
 
-4.4 systemctl restart apache2 (enter the root user password, in this case its mine)
-
+```
+systemctl restart apache2 (enter the root user password)
+```
 checking for the php test page, visit: http://167.114.55.93/info.php
 
-<<<Install WordPress>>>
+## Step 4 - Install WordPress
 
 5.1 cd /var/www/html
 
