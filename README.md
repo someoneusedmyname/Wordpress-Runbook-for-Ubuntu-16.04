@@ -3,7 +3,7 @@ A complete copy &amp; paste command line install for apache2, mysql, php &amp; W
 
 ## Step 1 - Logging In, Getting Updated & Installing Apache2
 
-ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
+You will need to be ssh'd in your Ubuntu 16.04 server before starting.
 
 1.1 Procede to next step after copying & pasting the code below:
 
@@ -18,7 +18,7 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && s
 
 1.2d Then press "ctrl + c", you should see "active (running)" in green text.
 
-1.2e Right click on the link and open in a new tab: http://167.114.55.93 to check for apache2 home page.
+1.2e Go to: http://your.ip.address.here to check for apache2 home page.
 
 ## Step 2 - mySQL install
 
@@ -56,7 +56,7 @@ phpinfo();
 
 3.4 Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
 
-3.5 Right click on the link and open in a new tab: http://167.114.55.93/info.php to check for the php test page.
+3.5 Go to: http://your.ip.address.here/info.php to check for the php test page.
 
 ## Step 4 - Install WordPress
 
@@ -89,7 +89,7 @@ cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo
 
 5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below:
 
-(you will editing in the nano file editor window)
+(you will be editing in the nano file editor window)
 
 ________________________________________________________________________
 
@@ -109,7 +109,7 @@ define('DB_PASSWORD', '**PASSWORD**');
 
 ________________________________________________________________________
 
-5.5 Press "CTRL + O" to write file, press enter, then "CTRL + X" to exit
+5.5 Press "CTRL + O" to write file, press enter, then "CTRL + X" to exit.
 
 5.6 We're almost done, just copy and paste the code from below:
 ```
@@ -125,7 +125,7 @@ ________________________________________________________________________________
 
 ## Step 6 - WordPress Completion
 
-6.1 Now visit http://167.114.55.93/wordpress to finish wordpress install. You should see the WordPress installation page where you select your language and continue.
+6.1 Now go to: http://your.ip.address.here/wordpress to finish wordpress install. You should see the WordPress installation page where you select your language and continue.
 
 6.2 Create a 'Site Title', 'Username' and 'Password' & enter a valid email address. Check the "Discourage search engines from indexing this site" and click 'Install Wordpress'.
 
