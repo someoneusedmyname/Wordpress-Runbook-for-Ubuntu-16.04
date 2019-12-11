@@ -90,24 +90,29 @@ sudo mysql -u root -p
 
 5.2 Enter database password from step 2.2b
 
-5.3 Copy & paste the code below, but replace the text in 'quotes' with the names you want.(i.e. 'wordpress_db' is replaced with 'myfirstwordpress_db')
+5.3 Copy & paste the code below, but replace the text in 'quotes' with the names you want.(i.e. 'wordpress_db' is replaced with 'myfirstwordpress_db'). The text in quotes is need later, so make sure you have it recorded somewhere.
 
 ```
 CREATE DATABASE 'wordpress_db'; 
 ```
+The database name will be used in the next command below.
+```
+GRANT ALL PRIVILEGES ON 'wordpress_db'.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; 
 ```
 
-6.2b GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; 
-
-*****("wordpress_db", "wordpress_user", "PASSWORD", should be changed)*****
-
-6.2c FLUSH PRIVILEGES;
-
-6.2d exit;
-
-6.3 mv wp-config-sample.php wp-config.php (make sure you are here:  /var/www/html/wordpress, you may need to enter "cd wordpress")
-
-6.4 sudo nano wp-config.php
+**('wordpress_db', 'wordpress_user', 'PASSWORD', should be changed to something of your choice)**
+```
+FLUSH PRIVILEGES;
+```
+```
+exit;
+```
+```
+mv wp-config-sample.php wp-config.php (make sure you are here:  /var/www/html/wordpress, you may need to enter "cd wordpress")
+```
+```
+sudo nano wp-config.php
+```
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
