@@ -11,8 +11,11 @@ Procede to next step after copying & pasting the code below.
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && systemctl status apache2
 ```
 -Enter the root user password, (stuff will load),
+
 -Do you want to continue? [Y/n] enter "y", (stuff will load),
+
 -Do you want to continue? [Y/n] enter "y", (stuff will load),
+
 -Then press "ctrl + c", you should see "active (running)" in green text.
 
 
@@ -26,7 +29,7 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && s
 
 2.4  (ctrl + c, to stop status)
 
-##Step 2 - mySQL install
+## Step 2 - mySQL install
 
 ```
 sudo apt-get install mysql-server 
