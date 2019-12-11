@@ -3,7 +3,7 @@ A complete copy &amp; paste command line install for apache2, mysql, php &amp; W
 
 ## Step 1 - Logging In, Getting Updated & Installing Apache2
 
-You will need to be ssh'd in your Ubuntu 16.04 server before starting.
+You will need to ssh into your Ubuntu 16.04 server before starting.
 
 1.1 Procede to next step after copying & pasting the code below:
 
