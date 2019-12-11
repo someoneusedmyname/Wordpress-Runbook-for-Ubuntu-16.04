@@ -10,7 +10,7 @@ Procede to next step after copying & pasting the code below:
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && systemctl status apache2
 ```
--Enter the root user password, (stuff will load),
+1. Enter the root user password, (stuff will load),
 
 -Do you want to continue? [Y/n] enter "y", (stuff will load),
 
@@ -27,9 +27,9 @@ Copy & paste the code below:
 ```
 sudo apt-get install mysql-server 
 ```
-Do you want to continue? [Y/n] enter "y"
+1. Do you want to continue? [Y/n] enter "y"
 
-3.2 purple screen --> enter a new password, re-enter password to confirm.
+-purple screen --> enter a new password, re-enter password to confirm.
 
 -might need this? sudo service mysql restart??
 
