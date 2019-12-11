@@ -56,10 +56,7 @@ phpinfo();
 
 3.4 Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
 
-```
-systemctl restart apache2 (enter the root user password)
-```
--Right click on the link and open in a new tab: http://167.114.55.93/info.php to check for the php test page.
+3.5 Right click on the link and open in a new tab: http://167.114.55.93/info.php to check for the php test page.
 
 ## Step 4 - Install WordPress
 
