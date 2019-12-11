@@ -1,15 +1,18 @@
 # Wordpress-Runbook-for-Ubuntu-16.04
 A complete copy &amp; paste command line install for apache2, mysql, php &amp; Wordpress on Ubuntu 16.04
 
-1.1 ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
+## Step 1 - Logging In & Getting Updated
 
-1.2 Enter the root user password, if prompted, after copying & pasting the code below.
+ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
+
+Procede to next step after copying & pasting the code below.
 
 ```
 sudo apt-get update
 ```
+Enter the root user password, if prompted
 
-1.3 Do you want to continue? [Y/n] enter "y", if prompted.
+Do you want to continue? [Y/n] enter "y", if prompted.
 
 ```
 sudo apt-get upgrade
