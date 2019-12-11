@@ -3,8 +3,7 @@ A complete copy &amp; paste command line install for apache2, mysql, php &amp; W
 
 1.1 ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
 
-1.2 
-```
+1.2 ```
 sudo apt-get update
 ```
 (enter the root user password, if prompted, in this case its mine)
