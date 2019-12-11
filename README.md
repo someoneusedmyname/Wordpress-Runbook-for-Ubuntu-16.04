@@ -77,16 +77,25 @@ cd /var/www/html && sudo wget -c http://wordpress.org/latest.tar.gz && sudo tar 
 
 5.3 sudo tar -xzvf latest.tar.gz
 
-4.3 Copy & paste the code below:
+4.3 Copy & paste the code below(setting permissions):
 ```
-sudo chown -R www-data:www-data /var/www/html/wordpress (setting permissions)
+sudo chown -R www-data:www-data /var/www/html/wordpress
 ```
-<<<creating database in mySQL>>>
+## Step 5 - Creating Database in mySQL>>>
 
-6.1 sudo mysql -u root -p (enter database password from step 3.2)EXIT
+5.1 Copy & paste the code below to enter into mySQL:
+```
+sudo mysql -u root -p 
+```
 
+5.2 Enter database password from step 2.2b
 
-6.2a CREATE DATABASE wordpress_db; 
+5.3 Copy & paste the code below, but replace the text in 'quotes' with the names you want.(i.e. 'wordpress_db' is replaced with 'myfirstwordpress_db')
+
+```
+CREATE DATABASE 'wordpress_db'; 
+```
+```
 
 6.2b GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; 
 
