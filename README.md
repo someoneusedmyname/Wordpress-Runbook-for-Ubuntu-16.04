@@ -18,7 +18,7 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && s
 
 1.2d Then press "ctrl + c", you should see "active (running)" in green text.
 
-1.2e Go to: http://your.ip.address.here to check for apache2 home page.
+1.2e Go to: http://your.ip.address.here to check for Apache2 Ubuntu Default Page.
 
 ## Step 2 - mySQL install
 
@@ -56,7 +56,7 @@ phpinfo();
 
 3.4 Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
 
-3.5 Go to: http://your.ip.address.here/info.php to check for the php test page.
+3.5 Go to: http://your.ip.address.here/info.php to check for the php info page.
 
 ## Step 4 - Install WordPress
 
@@ -131,3 +131,5 @@ ________________________________________________________________________________
 6.3 Now login with the credentials you just created and start customizing your new WordPress website!
 
 ______________________________________________________________________________________________________
+
+Thanks for checking out my WordPress runbook!!
