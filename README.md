@@ -90,23 +90,28 @@ cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo
 5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below:
 
 // ** MySQL settings - You can get this info from your web host ** //
+
 /** The name of the database for WordPress */
+
 define('DB_NAME', '**wordpress_db**');                
 
 /** MySQL database username */
+
 define('DB_USER', '**wordpress_user**');             
 
 /** MySQL database password */
+
 define('DB_PASSWORD', '**PASSWORD**');         
 
---> "CTRL + O" to write file, press enter, then "CTRL + X" to exit
-5.5 We're almost done, just copy and paste the code from below:
+5.5 Press "CTRL + O" to write file, press enter, then "CTRL + X" to exit
+
+5.6 We're almost done, just copy and paste the code from below:
 ```
 systemctl restart apache2 && systemctl restart mysql
 ```
-5.6 Enter the root user password, you'll be asked twice.
+5.7 Enter the root user password, you'll be asked twice.
 
-5.7 Now visit http://167.114.55.93/wordpress to finish wordpress install.
+5.8 Now visit http://167.114.55.93/wordpress to finish wordpress install.
 
 
 /////////////////////////////////////////////////////////////////////////////
