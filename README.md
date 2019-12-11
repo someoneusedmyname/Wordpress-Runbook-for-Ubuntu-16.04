@@ -61,10 +61,11 @@ s (enter the root user password, in this case its mine)
 4.2 sudo nano /var/www/html/info.php 
 
 4.3 copy and paste this text into the file editor window:
-
-"<?php
+```
+<?php
 phpinfo();
-?>"
+?>
+```
 
 then, "ctrl + o", press enter to write file, then "ctrl + x" to exit
 
