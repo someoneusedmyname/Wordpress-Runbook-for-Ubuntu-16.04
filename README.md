@@ -62,13 +62,10 @@ phpinfo();
 
 4.1 Copy & paste the code below:
 ```
-cd /var/www/html && sudo wget -c http://wordpress.org/latest.tar.gz && sudo tar -xzvf latest.tar.gz
-```
-
-4.2 Copy & paste the code below(setting permissions):
-```
+cd /var/www/html && sudo wget -c http://wordpress.org/latest.tar.gz && sudo tar -xzvf latest.tar.gz && 
 sudo chown -R www-data:www-data /var/www/html/wordpress
 ```
+
 ## Step 5 - Creating Database in mySQL>>>
 
 5.1 Copy & paste the code below to enter into mySQL:
@@ -87,34 +84,29 @@ CREATE DATABASE wordpress_db; GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpre
 **(wordpress_db, 'wordpress_user', 'PASSWORD', should be changed to something of your choice)**
 
 ```
-mv wp-config-sample.php wp-config.php 
+cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo nano wp-config.php
 ```
-(make sure you are here: cd /var/www/html/wordpress, you may need to enter "cd wordpress")cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php
-```
-sudo nano wp-config.php
-```
+
+5.4 Refer to the items you changed above and change the appropriate text as shown below:
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress_db');                (your database name)
+define('DB_NAME', '**wordpress_db**');                (your database name, don't add this text)
 
 /** MySQL database username */
-define('DB_USER', 'wordpress_user');              (your username)
+define('DB_USER', '**wordpress_user**');              (your username, don't add this text)
 
 /** MySQL database password */
-define('DB_PASSWORD', 'PASSWORD');                (your password)
+define('DB_PASSWORD', '**PASSWORD**');                (your password, don't add this text)
 
 --> "CTRL + O" to write file, press enter, then "CTRL + X" to exit
-
+5.5 We're almost done, just copy and paste the code from below:
 ```
 systemctl restart apache2 && systemctl restart mysql
 ```
-6.6 Enter the root user password, you'll be asked twice
+5.6 Enter the root user password, you'll be asked twice.
 
-
-
-
-now visit http://167.114.55.93/wordpress to finish wordpress install
+5.7 Now visit http://167.114.55.93/wordpress to finish wordpress install.
 
 
 /////////////////////////////////////////////////////////////////////////////
