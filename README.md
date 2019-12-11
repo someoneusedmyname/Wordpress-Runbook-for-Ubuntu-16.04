@@ -1,2 +1,111 @@
 # Wordpress-Runbook-for-Ubuntu-16.04
 A complete copy &amp; paste command line install for apache2, mysql, php &amp; Wordpress on Ubuntu 16.04
+
+1.1 ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
+
+1.2 sudo apt-get update (enter the root user password, if prompted, in this case its mine)
+
+1.3 sudo apt-get upgrade (Do you want to continue? [Y/n] enter "y", if prompted)
+
+<<<apache2 install>>>
+
+2.1 sudo apt-get install apache2 (Do you want to continue? [Y/n] enter "y")
+
+2.2 systemctl start apache2 (enter the root user password, in this case its mine) check 167.114.55.93 for apache2 home page
+
+2.3 systemctl enable apache2 (enter the root user password, in this case its mine) do I need this? 
+
+2.4 systemctl status apache2 (ctrl + c, to stop status)
+
+<<<mySQL install>>>
+
+3.1 sudo apt-get install mysql-server (Do you want to continue? [Y/n] enter "y")
+
+3.2 purple screen --> enter a new password, re-enter password to confirm (i used "mypassword")
+
+////////////////////////////////
+
+3.3 
+ --> enter password from above, enter "no" for password plug-in, unless you want it, 
+-->  enter "no" again if you're happy with your current password) --> enter "y" to remove anon users, 
+--> enter "y" to disallow root login remotely, --> enter "y" to remove test database,
+--> enter "y" to reload priviliges, --> you're done here!
+
+////////////////////////////////
+
+3.4 systemctl start mysql (enter the root user password, in this case its mine) sudo service mysql restart??
+
+s (enter the root user password, in this case its mine)
+??
+<<<Install PHP>>>
+
+4.1 sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-mbstring php7.0-gd php7.0-xml php7.0-xmlrpc php7.0-intl php7.0-soap php7.0-zip
+	
+ (enter root user password)?? --> (Do you want to continue? [Y/n] enter "y")
+
+4.2 sudo nano /var/www/html/info.php 
+
+4.3 copy and paste this text into the file editor window:
+
+"<?php
+phpinfo();
+?>"
+
+then, "ctrl + o", press enter to write file, then "ctrl + x" to exit
+
+4.4 systemctl restart apache2 (enter the root user password, in this case its mine)
+
+checking for the php test page, visit: http://167.114.55.93/info.php
+
+<<<Install WordPress>>>
+
+5.1 cd /var/www/html
+
+5.2 sudo wget -c http://wordpress.org/latest.tar.gz
+
+5.3 sudo tar -xzvf latest.tar.gz
+
+5.4 sudo chown -R www-data:www-data /var/www/html/wordpress (setting permissions)
+
+<<<creating database in mySQL>>>
+
+6.1 sudo mysql -u root -p (enter database password from step 3.2)EXIT
+
+
+6.2a CREATE DATABASE wordpress_db; 
+
+6.2b GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'PASSWORD'; 
+
+*****("wordpress_db", "wordpress_user", "PASSWORD", should be changed)*****
+
+6.2c FLUSH PRIVILEGES;
+
+6.2d exit;
+
+6.3 mv wp-config-sample.php wp-config.php (make sure you are here:  /var/www/html/wordpress, you may need to enter "cd wordpress")
+
+6.4 sudo nano wp-config.php
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wordpress_db');                (your database name)
+
+/** MySQL database username */
+define('DB_USER', 'wordpress_user');              (your username)
+
+/** MySQL database password */
+define('DB_PASSWORD', 'PASSWORD');                (your password)
+
+--> "CTRL + O" to write file, press enter, then "CTRL + X" to exit
+
+6.5 systemctl restart apache2 (enter the root user password, in this case its mine)
+
+6.6 systemctl restart mysql (enter the root user password, in this case its mine)
+
+
+
+
+now visit http://167.114.55.93/wordpress to finish wordpress install
+
+
+/////////////////////////////////////////////////////////////////////////////
