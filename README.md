@@ -5,31 +5,31 @@ A complete copy &amp; paste command line install for apache2, mysql, php &amp; W
 
 ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally is would be "-p 22")
 
-Procede to next step after copying & pasting the code below:
+1.1 Procede to next step after copying & pasting the code below:
 
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && systemctl status apache2
 ```
-1. Enter the root user password, (stuff will load),
+1.2a Enter the root user password, (stuff will load),
 
--Do you want to continue? [Y/n] enter "y", (stuff will load),
+1.2b Do you want to continue? [Y/n] enter "y", (stuff will load),
 
--Do you want to continue? [Y/n] enter "y", (stuff will load),
+1.2. Do you want to continue? [Y/n] enter "y", (stuff will load),
 
--Then press "ctrl + c", you should see "active (running)" in green text.
+1.2d Then press "ctrl + c", you should see "active (running)" in green text.
 
--Right click on the link and open in a new tab: http://167.114.55.93 to check for apache2 home page.
+1.2e Right click on the link and open in a new tab: http://167.114.55.93 to check for apache2 home page.
 
 ## Step 2 - mySQL install
 
-Copy & paste the code below:
+2.1 Copy & paste the code below:
 
 ```
 sudo apt-get install mysql-server 
 ```
-1. Do you want to continue? [Y/n] enter "y"
+2.2a Do you want to continue? [Y/n] enter "y"
 
--purple screen --> enter a new password, re-enter password to confirm.
+2.2b Purple screen --> enter a new password, re-enter password to confirm.
 
 -might need this? sudo service mysql restart??
 
@@ -37,7 +37,7 @@ sudo apt-get install mysql-server
 
 ## Step 3 - Install PHP
 
-Copy & paste the code below:
+3.1 Copy & paste the code below:
 
 ```
 
@@ -45,13 +45,13 @@ sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.
 
 ```
 	
- (enter root user password)?? --> (Do you want to continue? [Y/n] enter "y")
+3.2 (enter root user password)?? --> (Do you want to continue? [Y/n] enter "y")
 
 ```
 sudo nano /var/www/html/info.php 
 ```
 
-Copy and paste this text into the file editor window:
+3.3 Copy and paste this text into the file editor window:
 
 ```
 <?php
@@ -59,7 +59,7 @@ phpinfo();
 ?>
 ```
 
-Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
+3.4 Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
 
 ```
 systemctl restart apache2 (enter the root user password)
