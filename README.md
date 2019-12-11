@@ -10,13 +10,11 @@ Procede to next step after copying & pasting the code below.
 ```
 sudo apt-get update
 ```
-Enter the root user password, if prompted
-
-Do you want to continue? [Y/n] enter "y", if prompted.
 
 ```
 sudo apt-get upgrade
 ```
+Do you want to continue? [Y/n] enter "y".
 
 <<<apache2 install>>>
 
