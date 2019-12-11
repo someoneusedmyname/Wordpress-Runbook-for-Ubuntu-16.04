@@ -91,13 +91,13 @@ cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', '**wordpress_db**');                (your database name, don't add this text)
+define('DB_NAME', '**wordpress_db**');                
 
 /** MySQL database username */
-define('DB_USER', '**wordpress_user**');              (your username, don't add this text)
+define('DB_USER', '**wordpress_user**');             
 
 /** MySQL database password */
-define('DB_PASSWORD', '**PASSWORD**');                (your password, don't add this text)
+define('DB_PASSWORD', '**PASSWORD**');         
 
 --> "CTRL + O" to write file, press enter, then "CTRL + X" to exit
 5.5 We're almost done, just copy and paste the code from below:
