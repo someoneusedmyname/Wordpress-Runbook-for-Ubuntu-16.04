@@ -121,7 +121,13 @@ We are done working in the command line. We will finish the WordPress install in
 
 ________________________________________________________________________________________________
 
-5.8 Now visit http://167.114.55.93/wordpress to finish wordpress install. You should see the WordPress installation page where you select your language and continue.
+## Step 6 - WordPress Completion
+
+6.1 Now visit http://167.114.55.93/wordpress to finish wordpress install. You should see the WordPress installation page where you select your language and continue.
+
+6.2 Create a 'Site Title', 'Username' and 'Password' & enter a valid email address. Check the "Discourage search engines from indexing this site" and click 'Install Wordpress'.
+
+6.3 Now login with the credentials you just created and start customizing your new WordPress website!
 
 
 /////////////////////////////////////////////////////////////////////////////
