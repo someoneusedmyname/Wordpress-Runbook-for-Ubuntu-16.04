@@ -10,7 +10,7 @@ Procede to next step after copying & pasting the code below.
 ```
 sudo apt-get update
 ```
-
+Enter the root user password.
 ```
 sudo apt-get upgrade
 ```
