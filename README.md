@@ -8,12 +8,9 @@ ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally 
 Procede to next step after copying & pasting the code below.
 
 ```
-sudo apt-get update
+sudo apt-get update && sudo apt-get upgrade
 ```
 Enter the root user password.
-```
-sudo apt-get upgrade
-```
 Do you want to continue? [Y/n] enter "y".
 
 <<<apache2 install>>>
