@@ -31,10 +31,6 @@ sudo apt-get install mysql-server
 
 2.2b Purple screen --> enter a new password, re-enter password to confirm.
 
--might need this? sudo service mysql restart??
-
-(enter the root user password, in this case its mine)
-
 ## Step 3 - Install PHP
 
 3.1 Copy & paste the code below:
@@ -44,7 +40,7 @@ sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.
 
 ```
 	
-3.2 (enter root user password)?? --> (Do you want to continue? [Y/n] enter "y")
+3.2 Do you want to continue? [Y/n] enter "y".
 
 ```
 sudo nano /var/www/html/info.php 
