@@ -8,10 +8,13 @@ ssh your-user@your.ip.goes.here -p 443 (443 is used for public wifi, genereally 
 Procede to next step after copying & pasting the code below.
 
 ```
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && systemctl status apache2
 ```
-Enter the root user password. (stuff with load)
-Do you want to continue? [Y/n] enter "y".
+Enter the root user password, (stuff will load)
+Do you want to continue? [Y/n] enter "y", (stuff will load),
+Do you want to continue? [Y/n] enter "y", (stuff will load),
+Then press "ctrl + c", you should see "active (running)" in green text.
+
 
 <<<apache2 install>>>
 
@@ -21,7 +24,7 @@ Do you want to continue? [Y/n] enter "y".
 
 2.3 systemctl enable apache2 (enter the root user password, in this case its mine) do I need this? 
 
-2.4 systemctl status apache2 (ctrl + c, to stop status)
+2.4  (ctrl + c, to stop status)
 
 <<<mySQL install>>>
 
