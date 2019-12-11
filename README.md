@@ -10,7 +10,7 @@ Procede to next step after copying & pasting the code below.
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-Enter the root user password.
+Enter the root user password. (stuff with load)
 Do you want to continue? [Y/n] enter "y".
 
 <<<apache2 install>>>
