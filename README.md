@@ -101,8 +101,9 @@ The database name will be used in the next command below.
 **(wordpress_db, 'wordpress_user', 'PASSWORD', should be changed to something of your choice)**
 
 ```
-mv wp-config-sample.php wp-config.php (make sure you are here:  /var/www/html/wordpress, you may need to enter "cd wordpress")
+mv wp-config-sample.php wp-config.php 
 ```
+(make sure you are here:  /var/www/html/wordpress, you may need to enter "cd wordpress")
 ```
 sudo nano wp-config.php
 ```
@@ -119,9 +120,10 @@ define('DB_PASSWORD', 'PASSWORD');                (your password)
 
 --> "CTRL + O" to write file, press enter, then "CTRL + X" to exit
 
-6.5 systemctl restart apache2 (enter the root user password, in this case its mine)
-
-6.6 systemctl restart mysql (enter the root user password, in this case its mine)
+```
+systemctl restart apache2 && systemctl restart mysql
+```
+6.6 Enter the root user password, you'll be asked twice
 
 
 
