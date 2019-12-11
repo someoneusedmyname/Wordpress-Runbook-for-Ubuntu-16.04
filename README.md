@@ -87,7 +87,7 @@ CREATE DATABASE wordpress_db; GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpre
 cd /var/www/html/wordpress && sudo mv wp-config-sample.php wp-config.php && sudo nano wp-config.php
 ```
 
-5.4 Refer to the items you changed above and change the appropriate text as shown below:
+5.4 Refer to the items you changed above and change the appropriate text(in **bold**) as shown below:
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
