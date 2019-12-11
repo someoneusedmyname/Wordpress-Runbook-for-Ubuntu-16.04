@@ -18,7 +18,7 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install apache2 && s
 
 -Then press "ctrl + c", you should see "active (running)" in green text.
 
--Right click on the link and open in a new tab: http://167.114.55.93, to check for apache2 home page
+-Right click on the link and open in a new tab: http://167.114.55.93 to check for apache2 home page.
 
 ## Step 2 - mySQL install
 
@@ -29,7 +29,7 @@ sudo apt-get install mysql-server
 ```
 Do you want to continue? [Y/n] enter "y"
 
-3.2 purple screen --> enter a new password, re-enter password to confirm (i used "mypassword")
+3.2 purple screen --> enter a new password, re-enter password to confirm.
 
 -might need this? sudo service mysql restart??
 
@@ -64,7 +64,7 @@ Now press: "ctrl + o", press enter to write file, then "ctrl + x" to exit.
 ```
 systemctl restart apache2 (enter the root user password)
 ```
-checking for the php test page, visit: http://167.114.55.93/info.php
+-Right click on the link and open in a new tab: http://167.114.55.93/info.php to check for the php test page.
 
 ## Step 4 - Install WordPress
 
